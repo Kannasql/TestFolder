@@ -1,11 +1,12 @@
 {{
     config(
-        materialized='table'
+        materialized='table',tags = ['newproj'],
+        severity = 'warn'
     )
 }}
 
-select 1 as Id
-union
-select 2
-union
-select 3
+select 5 as Id
+union 
+select 6
+union 
+select 6

@@ -18,15 +18,14 @@ models:
             description: "The primary key for this table"
             tests:
                 - unique
-                - not_null
+                - not_null   
 
-      # - name: test
-      #   description: description
-      #   database : S_AND_P_INDEX
-      #   schema : DATAFEEDS
-      #   columns:
-      #     - name: 
-      #       description: "The primary key for this table"
-      #       tests:
-      #           - unique
-      #           - not_null
+    - name: test
+      description: "A test dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - not_null    
+                - unique
+                 
